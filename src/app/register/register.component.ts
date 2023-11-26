@@ -8,7 +8,7 @@ import { ToastrService } from "ngx-toastr";
 })
 export class RegisterComponent {
 
-  constructor(private builder: FormBuilder, private toastr: ) {
+  constructor(private builder: FormBuilder, private toastr: ToastrService) {
 
   }
 
@@ -27,7 +27,7 @@ export class RegisterComponent {
 
 
     } else {
-
+      this.toastr.warning('please enter valid data');
      }
   }
 

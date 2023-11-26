@@ -7,7 +7,10 @@ import { Injectable } from '@angular/core';
 export class AuthService {
 
   constructor(private http: HttpClient) { }
+  apiurl=''
 
-  G
+  GetAll() {
+     return this.http.get(this.apiurl)
+  }
 
 }

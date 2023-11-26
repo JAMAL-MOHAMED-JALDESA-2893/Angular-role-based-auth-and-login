@@ -8,4 +8,8 @@ import { FormBuilder } from '@angular/forms';
 })
 export class RegisterComponent {
 
+  constructor(private builder: FormBuilder) {
+
+  }
+
 }

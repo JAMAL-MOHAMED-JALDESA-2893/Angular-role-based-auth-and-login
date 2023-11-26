@@ -17,7 +17,7 @@ export class RegisterComponent {
     name: this.builder.control('', Validators.required),
     password: this.builder.control('', Validators.required),
     gender: this.builder.control('', Validators.required)
-
+    isactive: this.builder.control(false)
 
   })
 

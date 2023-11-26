@@ -12,4 +12,8 @@ export class RegisterComponent {
 
   }
 
+  registerform = this.builder.group({
+     id: this.builder.control('', Validators.required)
+  })
+
 }

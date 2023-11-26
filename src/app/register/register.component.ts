@@ -28,7 +28,9 @@ export class RegisterComponent {
   // proceed registration function
   proceedregister() {
     if (this.registerform.valid) {
-
+      this.service.Proceedregister(this.registerform.value).subscribe(res => {
+         this.toastr.success('Please contact admin for enable success', 'Registered successfully')
+       })
 
     } else {
       this.toastr.warning('please enter valid data');

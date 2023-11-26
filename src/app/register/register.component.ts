@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { ToastrService } from "ngx-toastr";
 import { AuthService } from '../service/auth.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-register',
@@ -10,7 +12,7 @@ import { AuthService } from '../service/auth.service';
 })
 export class RegisterComponent {
 
-  constructor(private builder: FormBuilder, private toastr: ToastrService, private service: AuthService) {
+  constructor(private builder: FormBuilder, private toastr: ToastrService, private service: AuthService, private router:Router) {
 
   }
 

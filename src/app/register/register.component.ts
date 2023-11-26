@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-
+import { ToastrService } from "ngx-toastr";
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -8,7 +8,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class RegisterComponent {
 
-  constructor(private builder: FormBuilder) {
+  constructor(private builder: FormBuilder, private toastr: ) {
 
   }
 
@@ -27,7 +27,7 @@ export class RegisterComponent {
 
 
     } else {
-      
+
      }
   }
 

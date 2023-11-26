@@ -12,6 +12,7 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { UserlistingComponent } from './userlisting/userlisting.component';
+import { UpdatepopupComponent } from './updatepopup/updatepopup.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { UserlistingComponent } from './userlisting/userlisting.component';
     RegisterComponent,
     LoginComponent,
     HomeComponent,
-    UserlistingComponent
+    UserlistingComponent,
+    UpdatepopupComponent
   ],
   imports: [
     BrowserModule,

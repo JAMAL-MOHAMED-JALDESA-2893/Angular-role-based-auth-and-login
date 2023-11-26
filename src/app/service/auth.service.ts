@@ -14,7 +14,15 @@ export class AuthService {
   }
 
   GetbyCode(code:any) {
-    return this.http.get(this.apiurl + "/" + code)
+    return this.http.get(this.apiurl + "/" + code);
+  }
+
+  Proceedregister(inputdata:any) {
+    return this.http.post(this.apiurl, inputdata);
+  }
+
+  Updateuser(code: any, inputdata: any) {
+    return this.http.put(this.apiurl + '/' + code, inputdata);
   }
 
 }

@@ -16,8 +16,9 @@ export class RegisterComponent {
     id: this.builder.control('', Validators.compose([Validators.required, Validators.minLength(5)])),
     name: this.builder.control('', Validators.required),
     password: this.builder.control('', Validators.required),
+    gender: this.builder.control('', Validators.required)
 
-    
+
   })
 
 }

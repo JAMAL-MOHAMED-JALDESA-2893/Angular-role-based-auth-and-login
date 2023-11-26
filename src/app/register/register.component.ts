@@ -14,7 +14,7 @@ export class RegisterComponent {
 
   registerform = this.builder.group({
     id: this.builder.control('', Validators.compose([Validators.required, Validators.minLength(5)])),
-    name: 
+    name: this.builder.control('', Validators.required)
   })
 
 }
